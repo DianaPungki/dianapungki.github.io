@@ -29,6 +29,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- datatables -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Updated: Mar 10 2023 with Bootstrap v5.2.3
@@ -121,27 +124,53 @@
               </div>
               <div class="swiper-pagination"></div>
             </div>
+
+            <div class="portfolio-info">
+              <h3>Fitur Project</h3>
+              <h4>Blanjaloka (E-commerce pasar)</h4>
+              <p>
+                Website E-commerce ini dibangun dengan tujuan agar orang tidak perlu pergi kepasar lagi.
+              </p>
+
+              Berikut fitur yang ada di Blanjaloka :
+
+              <table id="example" class="display" style="width:100%">
+                <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Fitur</th>
+                  <th>Fungsi</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Admin</td>
+                  <td>CRUD Pasar</td>
+                  <td>Menambah ubah </td>
+                </tr>
+              </tbody>
+              </table>
+            </div>
           </div>
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
+              <h3>Informasi Project</h3>
               <ul>
                 <li><strong>Category</strong>: Web Development</li>
-                <li><strong>Client</strong>: P Bagus Mentor Magang Citiasia Inc</li>
+                <li><strong>Client</strong>: P Bagus (Mentor Magang Citiasia Inc)</li>
                 <li><strong>Project date</strong>: Agustus 2021 - Juli 2022</li>
                 <li><strong>Project URL</strong>: <a href="#">-</a></li>
                 <li><strong>Framework</strong>: Laravel
               </ul>
             </div>
             <div class="portfolio-description">
-              <h2>Blanjaloka (E-commerce pasar)</h2>
-              <p>
-                Website E-commerce ini dibangun dengan tujuan agar orang tidak perlu pergi kepasar lagi.
-              </p>
-              <ul><b>Kriteria :</b>
+              <h2>Kriteria</h2>
+             
+              <ul>
                 <li>Laravel 8</li>
                 <li>PHP 8.2</li>
+                <li>Bootstrap</li>
               </ul>
             </div>
           </div>
@@ -185,6 +214,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- datatables -->
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+
+  <script>
+    new DataTable('#example');
+</script>
 
 </body>
 
